@@ -1,0 +1,61 @@
+name: 'ssh-scp-deploy'
+description: 'A GitHub Action that upload the artifact via scp and runs commands before or/and after.'
+author: 'Marco Dalla Santa'
+
+inputs: 
+  local:
+    description: 'Local file path'
+    required: false
+    default: './'
+
+  remote:
+    description: 'Remote file path'
+    required: false
+    default: '~/'
+
+  host:
+    description: 'Remote server address'
+    required: true
+
+  port:
+    description: 'Remote server port (default 22)'
+    required: false
+    default: 22
+
+  user:
+    description: 'Remote server user'
+    required: true
+
+  password:
+    description: 'User password'
+    required: false
+
+  key:
+    description: 'Remote server private key'
+    required: false
+
+  pre_upload:
+    description: 'Command to run via ssh before scp upload'
+    required: false
+
+  post_upload:
+    description: 'Command to run via ssh after scp upload'
+    required: false
+
+  ssh_options:
+    description: 'A set of ssh_option separated by -o'
+    required: false
+    default: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+
+  scp_options:
+    description: 'Flags to use during scp'
+    required: false
+    default:
+    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'upload-cloud'
+  color: 'green'

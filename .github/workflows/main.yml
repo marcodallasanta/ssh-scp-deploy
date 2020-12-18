@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: underscore69/ssh-scp-deploy@main
+        with:
+          local: "./"
+          remote: "~/"
+          host: ${{secrets.HOST}}
+          user: ${{secrets.USER}}
+          key: ${{secrets.KEY}}
+          pre_upload: echo "pre_upload 👈"
+          post_upload: echo "post_upload 👉"
