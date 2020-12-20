@@ -1,17 +1,30 @@
 # ssh-scp-deploy
 
 [![Action type](https://img.shields.io/badge/Docker%20action-262b31?logo=docker&logoColor=2496ed)](https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions)
-[![License](https://img.shields.io/github/license/underscore69/ssh-scp-deploy)](https://opensource.org/licenses/MIT)
-[![Pipeline status](https://img.shields.io/github/workflow/status/underscore69/ssh-scp-deploy/Test?label=test)](./)
+[![License](https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy)](LICENSE)
+[![Pipeline status](https://img.shields.io/github/workflow/status/mdallasanta/ssh-scp-deploy/Test?label=test)](./)
 
-This action provide an easy and higly customizable way to upload files via scp and execute a set of command via ssh before or/and after. 
+## ❔ Why should I use this action?
 
-## Supported runners
+Because this action provide an easy and higly customizable way to upload files via scp and execute a set of command via ssh before or/and after.  
+I use this action in my personal project to deploy an application to a remote server or to upload a file via scp.
+
+## 🏃 Supported runners
 [![Supported runner](https://img.shields.io/badge/Linux-262b31?style=for-the-badge&logo=linux&logoColor=fcc624)](https://docs.github.com/en/actions/creating-actions/about-actions#docker-container-actions)
 
-## Usage
+
+## 👤 Author
+
+**Marco Dalla Santa**
+
+* Twitter: [@marcodallasanta](https://twitter.com/Marco16032098)
+* Github: [@marcodallasanta](https://github.com/mdallasanta)
+* LinkedIn: [@marcodallasanta](https://www.linkedin.com/in/marco-dalla-santa-72bb4015a/)
+
+
+## ⚙️ Usage
 ```yaml
-    - uses: underscore69/ssh-scp-deploy@v1.0.0
+    - uses: mdallasanta/ssh-scp-deploy@{version}
       with:
         local: './'                                                  # Local file path - REQUIRED false - DEFAULT ./
         remote: '~/'                                                 # Remote file path - REQUIRED false - DEFAULT ~/
@@ -26,5 +39,18 @@ This action provide an easy and higly customizable way to upload files via scp a
         scp_options: -v                                              # Flags to use during scp - REQUIRED false - DEFAULT ''
 ```
 
-## License
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/mdallasanta/ssh-scp-deploy/issues).
+
+## 🙏 Thanks
+
+Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) that helped in testing.
+
+## 📝 License
+
+Copyright © 2020 [Marco Dalla Santa]()
+
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)
