@@ -1,13 +1,19 @@
-# ssh-scp-deploy
+<p align="center">
+  <img src="res/logo.png">
+</p>
 
-[![Action type](https://img.shields.io/badge/Docker%20action-262b31?logo=docker&logoColor=2496ed)](https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions)
-[![License](https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy)](LICENSE)
-[![Pipeline status](https://img.shields.io/github/workflow/status/mdallasanta/ssh-scp-deploy/Test?label=test)](./)
+<p align="center">
+  <a href="https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions"><img alt="Action type" src="https://img.shields.io/badge/Docker%20action-262b31?logo=docker&logoColor=2496ed"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy"></a>
+  <a href="https://github.com/mdallasanta/ssh-scp-deploy/actions?query=workflow%3ATest"><img alt="Pipeline status" src="https://github.com/mdallasanta/ssh-scp-deploy/workflows/Test/badge.svg"></a>
+</p>
+
+# ssh-scp-deploy
 
 ## ❔ Why should I use this action?
 
 Because this action provide an easy and higly customizable way to upload files via scp and execute a set of command via ssh before or/and after.  
-I use this action in my personal project to deploy an application to a remote server or to upload a file via scp.
+I use this action to deploy my personal projects to remote server, restarting the needed services or to do a simple upload via scp.
 
 ## 🏃 Supported runners
 [![Supported runner](https://img.shields.io/badge/Linux-262b31?style=for-the-badge&logo=linux&logoColor=fcc624)](https://docs.github.com/en/actions/creating-actions/about-actions#docker-container-actions)
@@ -51,6 +57,6 @@ Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) that helped in testi
 
 ## 📝 License
 
-Copyright © 2020 [Marco Dalla Santa]()
+Copyright © 2020 [Marco Dalla Santa](https://github.com/mdallasanta)
 
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)
