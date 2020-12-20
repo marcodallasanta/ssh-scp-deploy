@@ -1,5 +1,3 @@
-# ssh-scp-deploy
-
 <p align="center">
   <img src="res/logo.png">
 </p>
@@ -9,6 +7,8 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy"></a>
   <a href="https://github.com/mdallasanta/ssh-scp-deploy/actions?query=workflow%3ATest"><img alt="Pipeline status" src="https://github.com/mdallasanta/ssh-scp-deploy/workflows/Test/badge.svg"></a>
 </p>
+
+# ssh-scp-deploy
 
 ## ❔ Why should I use this action?
 
