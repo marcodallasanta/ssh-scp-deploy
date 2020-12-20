@@ -1,8 +1,14 @@
 # ssh-scp-deploy
 
-[![Action type](https://img.shields.io/badge/Docker%20action-262b31?logo=docker&logoColor=2496ed)](https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions)
-[![License](https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy)](LICENSE)
-[![Pipeline status](https://img.shields.io/github/workflow/status/mdallasanta/ssh-scp-deploy/Test?label=test)](./)
+<p align="center">
+  <img src="res/logo.png">
+</p>
+
+<p align="center">
+  <a href="https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions"><img alt="Action type" src="https://img.shields.io/badge/Docker%20action-262b31?logo=docker&logoColor=2496ed"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy"></a>
+  <a href="https://github.com/mdallasanta/ssh-scp-deploy/actions?query=workflow%3ATest"><img alt="Pipeline status" src="https://github.com/mdallasanta/ssh-scp-deploy/workflows/Test/badge.svg"></a>
+</p>
 
 ## ❔ Why should I use this action?
 
@@ -51,6 +57,6 @@ Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) that helped in testi
 
 ## 📝 License
 
-Copyright © 2020 [Marco Dalla Santa]()
+Copyright © 2020 [Marco Dalla Santa](https://github.com/mdallasanta)
 
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)
