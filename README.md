@@ -13,7 +13,7 @@
 ## ❔ Why should I use this action?
 
 Because this action provide an easy and higly customizable way to upload files via scp and execute a set of command via ssh before or/and after.  
-I use this action in my personal project to deploy an application to a remote server or to upload a file via scp.
+I use this action to deploy my personal projects to remote server, restarting the needed services or to do a simple upload via scp.
 
 ## 🏃 Supported runners
 [![Supported runner](https://img.shields.io/badge/Linux-262b31?style=for-the-badge&logo=linux&logoColor=fcc624)](https://docs.github.com/en/actions/creating-actions/about-actions#docker-container-actions)
