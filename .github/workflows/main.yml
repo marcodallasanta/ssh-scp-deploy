@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: underscore69/ssh-scp-deploy@main
+      - uses: marcodallasanta/ssh-scp-deploy@main
         with:
-          local: "./"
+          local: "CHANGELOG.md"
           remote: "~/"
           host: ${{secrets.HOST}}
           user: ${{secrets.USER}}

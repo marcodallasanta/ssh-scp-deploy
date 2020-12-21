@@ -7,7 +7,6 @@ RUN  apk update && \
   bash
 
 COPY LICENSE README.md /
-
-COPY *.sh ./
+COPY entrypoint.sh with_key.sh with_pass.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
