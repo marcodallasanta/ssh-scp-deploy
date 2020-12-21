@@ -1,4 +1,5 @@
 #!/bin/bash
+
 PASSWORD=${INPUT_PASSWORD};
 KEY=${INPUT_KEY};
 
