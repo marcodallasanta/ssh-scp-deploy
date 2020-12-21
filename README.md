@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="res/logo.png">
+  <img src="resources/logo.png">
 </p>
 
 <p align="center">
   <a href="https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions"><img alt="Action type" src="https://img.shields.io/badge/Docker%20action-262b31?logo=docker&logoColor=2496ed"></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/mdallasanta/ssh-scp-deploy"></a>
-  <a href="https://github.com/mdallasanta/ssh-scp-deploy/actions?query=workflow%3ATest"><img alt="Pipeline status" src="https://github.com/mdallasanta/ssh-scp-deploy/workflows/Test/badge.svg"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/marcodallasanta/ssh-scp-deploy"></a>
+  <a href="https://github.com/marcodallasanta/ssh-scp-deploy/actions?query=workflow%3ATest"><img alt="Pipeline status" src="https://github.com/marcodallasanta/ssh-scp-deploy/workflows/Test/badge.svg"></a>
 </p>
 
 # ssh-scp-deploy
@@ -23,9 +23,9 @@ I use this action to deploy my personal projects to remote server, restarting th
 
 **Marco Dalla Santa**
 
-* Twitter: [@marcodallasanta](https://twitter.com/Marco16032098)
-* Github: [@marcodallasanta](https://github.com/mdallasanta)
-* LinkedIn: [@marcodallasanta](https://www.linkedin.com/in/marco-dalla-santa-72bb4015a/)
+* Twitter: [@marcodallasanta](https://twitter.com/marcodallasanta)
+* Github: [@marcodallasanta](https://github.com/marcoallasanta)
+* LinkedIn: [@marcodallasanta](https://linkedin.com/in/marcodallasanta)
 
 
 ## ⚙️ Usage
@@ -57,6 +57,6 @@ Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) that helped in testi
 
 ## 📝 License
 
-Copyright © 2020 [Marco Dalla Santa](https://github.com/mdallasanta)
+Copyright © 2020 [Marco Dalla Santa](https://github.com/marcoallasanta)
 
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)
