@@ -1,6 +1,7 @@
 #!/bin/bash
-PASSWORD=${INPUT_PASSWORD}
-KEY=${INPUT_KEY}
+PASSWORD=${INPUT_PASSWORD};
+KEY=${INPUT_KEY};
+
 if [ -z "$PRE_UPLOAD" and "$PASSWORD"]; then
     echo "🔑 Please provide at least a key or a password...";
     exit 0;
