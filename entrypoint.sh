@@ -10,8 +10,8 @@ fi
 
 if [[ -n "$KEY" ]]; then
     echo "🔑 Using key file...";
-    . /with_key.sh;
+    source /with_key.sh;
 else
     echo "🔑 Using password...";
-    . /with_pass.sh;
+    source /with_pass.sh;
 fi
