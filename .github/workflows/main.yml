@@ -14,7 +14,7 @@ jobs:
 
       - uses: marcodallasanta/ssh-scp-deploy@main
         with:
-          local: "./"
+          local: "CHANGELOG.md"
           remote: "~/"
           host: ${{secrets.HOST}}
           user: ${{secrets.USER}}
