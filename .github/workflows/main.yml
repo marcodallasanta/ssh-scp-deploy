@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: underscore69/ssh-scp-deploy@main
+      - uses: underscore69/ssh-scp-deploy@development
         with:
           local: "./"
           remote: "~/"
