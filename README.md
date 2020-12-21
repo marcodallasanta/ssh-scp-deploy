@@ -24,8 +24,9 @@ I use this action to deploy my personal projects to remote server, restarting th
 **Marco Dalla Santa**
 
 * Twitter: [@marcodallasanta](https://twitter.com/marcodallasanta)
-* Github: [@marcodallasanta](https://github.com/marcoallasanta)
+* Github: [@marcodallasanta](https://github.com/marcodallasanta)
 * LinkedIn: [@marcodallasanta](https://linkedin.com/in/marcodallasanta)
+* StackOverflow: [@marcodallasanta](https://stackoverflow.com/story/marcodallasanta)
 
 
 ## ⚙️ Usage
@@ -53,7 +54,7 @@ Feel free to check [issues page](https://github.com/mdallasanta/ssh-scp-deploy/i
 
 ## 🙏 Thanks
 
-Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) that helped in testing.
+Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) for help in testing.
 
 ## 📝 License
 
