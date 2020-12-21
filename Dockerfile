@@ -8,6 +8,6 @@ RUN  apk update && \
 
 COPY LICENSE README.md /
 
-COPY *.sh ./
+COPY *.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
