@@ -8,7 +8,7 @@ if [ -z "$PRE_UPLOAD" ] && [ "$PASSWORD" ]; then
     exit 0;
 fi
 
-if [[ ! -z "$KEY" ]]; then
+if [[ -n "$KEY" ]]; then
     echo "🔑 Using key file...";
     . with_key.sh;
 else
