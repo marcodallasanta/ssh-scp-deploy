@@ -51,6 +51,11 @@ inputs:
     description: 'Flags to use during scp'
     required: false
     default:
+  
+  scp_filepath:
+    description: 'Transfer the specified file'
+    required: false
+    default: target/*.jar
     
 runs:
   using: 'docker'
