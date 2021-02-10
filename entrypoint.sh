@@ -3,7 +3,7 @@
 PASSWORD=${INPUT_PASSWORD};
 KEY=${INPUT_KEY};
 
-if [ -z "$PRE_UPLOAD" ] && [ "$PASSWORD" ]; then
+if [ -z "$KEY" ] && [ -z "$PASSWORD" ]; then
     echo "🔑 Please provide at least a key or a password...";
     exit 0;
 fi
