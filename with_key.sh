@@ -17,7 +17,7 @@ fi
 {
     echo "🚚 Uploading via scp..." &&
     scp ${INPUT_SSH_OPTIONS} ${INPUT_SCP_OPTIONS} -P "${INPUT_PORT}" -r ${INPUT_LOCAL} ${INPUT_USER}@${INPUT_HOST}:"${INPUT_REMOTE}" && 
-    echo "🙌 Uploaded via scp"
+    echo "🙌 Uploaded via scp" 
 } || { 
     echo "😢 Something went wrong during upload" && exit 1 
 }
