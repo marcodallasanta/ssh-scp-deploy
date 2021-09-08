@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: marcodallasanta/ssh-scp-deploy@development
+      - uses: marcodallasanta/ssh-scp-deploy@main
         with:
           local: "CHANGELOG.md"
-          remote: "${{secrets.REM}}"
+          remote: "~/"
           host: ${{secrets.HOST}}
           user: ${{secrets.USER}}
           key: ${{secrets.KEY}}
