@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: marcodallasanta/ssh-scp-deploy@fix-action_never_fails
-        with:
+      - uses: marcodallasanta/ssh-scp-deploy@development
+          with:
           local: "CHANGELOG.md"
           remote: "~/"
           host: ${{secrets.HOST}}
