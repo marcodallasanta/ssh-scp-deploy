@@ -31,7 +31,7 @@ jobs:
       - uses: marcodallasanta/ssh-scp-deploy@development
         with:
           local: "CHANGELOG.md"
-          remote: "~/error"
+          remote: "~/error/"
           host: ${{secrets.HOST}}
           user: ${{secrets.USER}}
           password: ${{secrets.PASSWORD}}
