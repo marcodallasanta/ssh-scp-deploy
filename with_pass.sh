@@ -16,4 +16,4 @@ if [ ! -z "$POST_UPLOAD" ]; then
     echo "✅ Executed post-upload script";
 fi
 
-echo "🎉 Done";
+sshpass -p ${PASSWORD} ssh ${INPUT_SSH_OPTIONS} ${INPUT_USER}@${INPUT_HOST} [[ -f $FILE_PATH ]] && echo "🎉 Done" || echo "😢 Something went wrong..." && exit 1;
