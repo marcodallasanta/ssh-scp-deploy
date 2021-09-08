@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - development
+      - main
 
 jobs:
   test-key:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: marcodallasanta/ssh-scp-deploy@development
+      - uses: marcodallasanta/ssh-scp-deploy@main
         with:
           local: "LICENSE"
           remote: "~/"
