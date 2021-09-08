@@ -28,8 +28,8 @@ if [ ! -z "$POST_UPLOAD" ]; then
         echo "👌 Executing post-upload script..." &&
         ssh ${INPUT_SSH_OPTIONS} ${INPUT_USER}@${INPUT_HOST} "$POST_UPLOAD && exit" &&
         echo "✅ Executed post-upload script"
-    } || { 
-        echo "😢 Something went wrong during post-upload script" && exit 1 
+    } || {
+        echo "😢 Something went wrong during post-upload script" && exit 1
     }
 fi
 
