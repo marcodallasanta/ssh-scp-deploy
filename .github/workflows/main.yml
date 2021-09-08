@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test:
+  test-key:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,10 +14,26 @@ jobs:
 
       - uses: marcodallasanta/ssh-scp-deploy@main
         with:
-          local: "CHANGELOG.md"
+          local: "LICENSE"
           remote: "~/"
           host: ${{secrets.HOST}}
           user: ${{secrets.USER}}
           key: ${{secrets.KEY}}
+          pre_upload: echo "pre_upload 👈"
+          post_upload: echo "post_upload 👉"
+  
+  test-pass:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: marcodallasanta/ssh-scp-deploy@development
+        with:
+          local: "CHANGELOG.md"
+          remote: "~/"
+          host: ${{secrets.HOST}}
+          user: ${{secrets.USER}}
+          password: ${{secrets.PASSWORD}}
           pre_upload: echo "pre_upload 👈"
           post_upload: echo "post_upload 👉"
