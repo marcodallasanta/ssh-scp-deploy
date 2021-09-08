@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - main
+      - development
 
 jobs:
   test:
@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: marcodallasanta/ssh-scp-deploy@main
+      - uses: marcodallasanta/ssh-scp-deploy@development
         with:
           local: "CHANGELOG.md"
-          remote: "~/"
+          remote: "~/error"
           host: ${{secrets.HOST}}
           user: ${{secrets.USER}}
           key: ${{secrets.KEY}}
