@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: marcodallasanta/ssh-scp-deploy@main
+      - uses: marcodallasanta/ssh-scp-deploy@fix-action_never_fails
         with:
           local: "CHANGELOG.md"
           remote: "~/"
