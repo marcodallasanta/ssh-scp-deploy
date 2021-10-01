@@ -62,6 +62,6 @@ Thanks to:
 
 ## 📝 License
 
-Copyright © 2020-2021 [Marco Dalla Santa](https://github.com/marcoallasanta)
+Copyright © 2020-2021 [Marco Dalla Santa](https://github.com/marcodallasanta)
 
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)
