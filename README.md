@@ -54,10 +54,14 @@ Feel free to check [issues page](https://github.com/mdallasanta/ssh-scp-deploy/i
 
 ## 🙏 Thanks
 
-Thanks to [Raphaël Bussa](https://github.com/raphaelbussa) for help in testing.
+Thanks to:
+
+- [Raphaël Bussa](https://github.com/raphaelbussa) for help in testing.
+- [jamesremuscat](https://github.com/jamesremuscat) for resolving [issue#15](https://github.com/marcodallasanta/ssh-scp-deploy/issues/15)
+
 
 ## 📝 License
 
-Copyright © 2020 [Marco Dalla Santa](https://github.com/marcoallasanta)
+Copyright © 2020-2021 [Marco Dalla Santa](https://github.com/marcoallasanta)
 
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)
