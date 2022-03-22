@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - feature-use_sh_instead_of_bash
+      - main
 
 jobs:
   test-key:
