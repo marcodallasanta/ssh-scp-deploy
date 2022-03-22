@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "🔑 Adding ssh key..." &&
 eval $(ssh-agent -s) &&
 ssh-add <(echo "${INPUT_KEY}") && 

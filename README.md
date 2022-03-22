@@ -34,14 +34,14 @@ I use this action to deploy my personal projects to remote server, restarting th
     - uses: mdallasanta/ssh-scp-deploy@{version}
       with:
         local: './'                                                  # Local file path - REQUIRED false - DEFAULT ./
-        remote: '~/'                                                 # Remote file path - REQUIRED false - DEFAULT ~/
-        host: ${{secrets.HOST}}                                      # Remote server address - REQUIRED true
-        port: ${{secrets.PORT}}                                      # Remote server port - REQUIRED false - DEFAULT 22
+        remote: '~/'                                                 # Remote file path - REQUIRED false - DEFAULT ~/
+        host: ${{secrets.HOST}}                                      # Remote server address - REQUIRED true
+        port: ${{secrets.PORT}}                                      # Remote server port - REQUIRED false - DEFAULT 22
         user: ${{secrets.USER}}                                      # Remote server user - REQUIRED true
-        password: ${{secrets.PASSWORD}}                              # User password - REQUIRED at least one of "password" or "key" 
-        key: ${{secrets.KEY}}                                        # Remote server private key - REQUIRED at least one of "password" or "key" 
-        pre_upload: echo "This will be executed before the upload!"  # Command to run via ssh before scp upload - REQUIRED false
-        post_upload: echo "This will be executed after the upload!"  # Command to run via ssh after scp upload - REQUIRED false
+        password: ${{secrets.PASSWORD}}                              # User password - REQUIRED at least one of "password" or "key" 
+        key: ${{secrets.KEY}}                                        # Remote server private key - REQUIRED at least one of "password" or "key" 
+        pre_upload: echo "This will be executed before the upload!"  # Command to run via ssh before scp upload - REQUIRED false
+        post_upload: echo "This will be executed after the upload!"  # Command to run via ssh after scp upload - REQUIRED false
         ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
         scp_options: -v                                              # Flags to use during scp - REQUIRED false - DEFAULT ''
 ```
@@ -62,6 +62,6 @@ Thanks to:
 
 ## 📝 License
 
-Copyright © 2020-2021 [Marco Dalla Santa](https://github.com/marcodallasanta)
+Copyright © 2020-2022 [Marco Dalla Santa](https://github.com/marcodallasanta)
 
 The source code, scripts and documentation in this project are released under the [MIT License](LICENSE)

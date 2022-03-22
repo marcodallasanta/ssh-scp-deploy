@@ -1,5 +1,10 @@
 # [Unreleased]
 
+## [v1.2.0] - 2021-03-22
+
+# Added
+- [Issue #17](https://github.com/marcodallasanta/ssh-scp-deploy/issues/15) - Using /bin/sh instead of /bin/bash.
+
 ## [v1.1.0] - 2021-10-02
 
 # Added

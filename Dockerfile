@@ -3,8 +3,7 @@ FROM alpine:latest
 RUN  apk update && \
   apk add --no-cache ca-certificates \
   openssh-client \
-  sshpass \
-  bash
+  sshpass
 
 COPY LICENSE README.md /
 COPY entrypoint.sh with_key.sh with_pass.sh /
