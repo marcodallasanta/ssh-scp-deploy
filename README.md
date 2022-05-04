@@ -12,7 +12,7 @@
 
 ## ❔ Why should I use this action?
 
-Because this action provide an easy and higly customizable way to upload files via scp and execute a set of command via ssh before or/and after.  
+Because this action provide an easy and highly customizable way to upload files via scp and execute a set of command via ssh before or/and after.  
 I use this action to deploy my personal projects to remote server, restarting the needed services or to do a simple upload via scp.
 
 ## 🏃 Supported runners
