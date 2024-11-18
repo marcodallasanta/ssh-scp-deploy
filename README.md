@@ -23,7 +23,6 @@ I use this action to deploy my personal projects to remote server, restarting th
 
 **Marco Dalla Santa**
 
-* Twitter: [@marcodallasanta](https://twitter.com/marcodallasanta)
 * Github: [@marcodallasanta](https://github.com/marcodallasanta)
 * LinkedIn: [@marcodallasanta](https://linkedin.com/in/marcodallasanta)
 
