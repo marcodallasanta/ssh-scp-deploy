@@ -6,34 +6,57 @@ on:
       - main
 
 jobs:
-  test-key:
+  test:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v1
+    services:
+      ssh_server:
+        image: rastasheep/ubuntu-sshd:latest
+        ports:
+          - 22/tcp
 
-      - uses: marcodallasanta/ssh-scp-deploy@main
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate SSH Key Pair
+        id: generate_key
+        run: |
+          echo "Generating a new SSH key pair..."
+          mkdir -p ${{ github.workspace }}/.ssh_temp
+          ssh-keygen -t rsa -C "github-action@$(date +%s)" -f ${{ github.workspace }}/.ssh_temp/id_rsa_action -N ""
+          echo "Key generation complete. Keys are in ${{ github.workspace }}/.ssh_temp"
+          echo "private_key_path=${{ github.workspace }}/.ssh_temp/id_rsa_action" >> $GITHUB_OUTPUT
+
+      - name: Read Private Key File
+        id: read_key
+        run: |
+          echo "Reading private key content..."
+          # Use multi-line output method for the key content
+          echo "private_key_content<<EOF" >> $GITHUB_OUTPUT
+          cat "${{steps.generate_key.outputs.private_key_path}}" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "Private key content loaded into output."
+
+      - name: Test ssh-scp deploy with password
+        uses: marcodallasanta/ssh-scp-deploy@main
+        with:
+          local: "${{ github.workspace }}/.ssh_temp/id_rsa_action.pub"
+          remote: "/root/.ssh/authorized_keys"
+          host: ssh_server
+          user: root
+          password: root
+          pre_upload: echo "pass pre_upload 👈"
+          post_upload: echo "pass post_upload 👉" && chown root:root /root/.ssh/authorized_keys && passwd -d root
+          ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+      
+      - name: Test ssh-scp deploy with ssh key
+        uses: marcodallasanta/ssh-scp-deploy@main
         with:
           local: "LICENSE"
           remote: "~/"
-          host: ${{secrets.HOST}}
-          user: ${{secrets.USER}}
-          key: ${{secrets.KEY}}
-          pre_upload: echo "pre_upload 👈"
-          post_upload: echo "post_upload 👉"
-  
-  test-pass:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-
-      - uses: marcodallasanta/ssh-scp-deploy@development
-        with:
-          local: "CHANGELOG.md"
-          remote: "~/"
-          host: ${{secrets.HOST}}
-          user: ${{secrets.USER}}
-          password: ${{secrets.PASSWORD}}
-          pre_upload: echo "pre_upload 👈"
-          post_upload: echo "post_upload 👉"
+          host: ssh_server
+          user: root
+          key: ${{steps.read_key.outputs.private_key_content}}
+          pre_upload: echo "key pre_upload 👈"
+          post_upload: echo "key post_upload 👉"
+          ssh_options: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
